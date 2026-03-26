@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Communicate Smart Hub</title>
+<title>Communicate Smart Book</title>
+
 <style>
-
 body {
-font-family: Arial;
 margin: 0;
-background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1);
-color: #333;
+font-family: Arial;
+background: linear-gradient(to bottom, #fdfbfb, #ebedee);
 }
 
-.container {
-padding: 20px;
-}
-
-h1 {
+.header {
 text-align: center;
-color: white;
+padding: 20px;
+font-size: 26px;
+font-weight: bold;
 }
 
-.card {
+.page {
 background: white;
-padding: 15px;
-margin: 15px 0;
+margin: 20px;
+padding: 20px;
 border-radius: 15px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
 color: #6a11cb;
 }
 
-button {
-padding: 10px;
-border: none;
+img {
+width: 100%;
 border-radius: 10px;
-background: #ff6f61;
-color: white;
+margin-top: 10px;
+}
+
+.good {
+color: green;
 font-weight: bold;
-cursor: pointer;
-margin-top: 10px;
 }
 
-.hidden {
-display: none;
-}
-
-.diagram {
-background: #f0f8ff;
-padding: 10px;
-border-radius: 10px;
-margin-top: 10px;
+.bad {
+color: red;
+font-weight: bold;
 }
 
 </style>
@@ -59,82 +50,60 @@ margin-top: 10px;
 
 <body>
 
-<div class="container">
+<div class="header">📖 Communicate Smart</div>
 
-<h1>🌍 Communicate Smart Hub</h1>
-
-<div class="card">
+<div class="page">
 <h2>📘 What is Communication?</h2>
-<p>Communication is the process of sending and receiving messages between people.</p>
-<div class="diagram">
-👤 Sender → 💬 Message → 👂 Receiver → 🔁 Feedback
-</div>
+<p>Communication is the process of sharing ideas, thoughts, and feelings between people.</p>
+
+<img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/cartoon-2027660_1280.png">
 </div>
 
-<div class="card">
-<h2>🗣 Types of Communication</h2>
-<p>🗨 Verbal – speaking</p>
-<p>🤐 Non-verbal – body language</p>
-<p>✍ Written – messages and emails</p>
+<div class="page">
+<h2>🎭 Formal vs Informal Communication</h2>
+<p><b>Formal:</b> Used in professional settings</p>
+<p><b>Informal:</b> Used with friends</p>
+
+<img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/business-1868489_1280.jpg">
 </div>
 
-<div class="card">
-<h2>🎭 Formal vs Informal</h2>
-<p><b>Formal:</b> “Good afternoon, I would like to present my idea.”</p>
-<p><b>Informal:</b> “Hey, let me show you something!”</p>
-</div>
-
-<div class="card">
+<div class="page">
 <h2>💛 Non-Violent Communication</h2>
-<p>Speak calmly, avoid harsh words, and respect others’ feelings.</p>
-<p>Instead of: “You are wrong!”</p>
-<p>Say: “I see it differently, let me explain.”</p>
+<p>Speak with respect and calmness.</p>
+
+<p class="bad">❌ “You are wrong!”</p>
+<p class="good">✔ “I see it differently, let me explain.”</p>
+
+<img src="https://cdn.pixabay.com/photo/2020/04/16/10/45/conversation-5054133_1280.png">
 </div>
 
-<div class="card">
-<h2>🧠 Understand People</h2>
-<p>Listen carefully, observe body language, and be patient.</p>
+<div class="page">
+<h2>🧠 Speak Confidently</h2>
+
+<p class="bad">❌ Head down, shy voice</p>
+<p class="good">✔ Look up, speak clearly</p>
+
+<img src="https://cdn.pixabay.com/photo/2016/03/31/19/57/avatar-1295431_1280.png">
 </div>
 
-<div class="card">
-<h2>✨ Speak Clearly & Confidently</h2>
-<button onclick="showTips()">Show Tips</button>
-<div id="tips" class="hidden">
-<p>✔ Speak slowly</p>
-<p>✔ Maintain eye contact</p>
-<p>✔ Practice before speaking</p>
-<p>✔ Believe in yourself</p>
-</div>
+<div class="page">
+<h2>✨ Clear Communication Tips</h2>
+<ul>
+<li>Speak slowly</li>
+<li>Maintain eye contact</li>
+<li>Listen carefully</li>
+<li>Be confident</li>
+</ul>
+
+<img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/cartoon-2027662_1280.png">
 </div>
 
-<div class="card">
-<h2>⚠ Do’s and Don’ts</h2>
-<button onclick="showDos()">Show Guide</button>
-<div id="dos" class="hidden">
-<p>✔ Be respectful</p>
-<p>✔ Listen actively</p>
-<p>✔ Be clear</p>
-<p>✘ Don’t interrupt</p>
-<p>✘ Don’t be rude</p>
-</div>
-</div>
-
-<div class="card">
+<div class="page">
 <h2>🌟 Why Communication Matters</h2>
-<p>Good communication builds relationships, prevents conflict, and helps you succeed in life.</p>
+<p>It helps build relationships, avoid misunderstandings, and succeed in life.</p>
+
+<img src="https://cdn.pixabay.com/photo/2016/03/31/20/11/teamwork-1296324_1280.png">
 </div>
-
-</div>
-
-<script>
-function showTips(){
-document.getElementById("tips").classList.toggle("hidden");
-}
-
-function showDos(){
-document.getElementById("dos").classList.toggle("hidden");
-}
-</script>
 
 </body>
-     </html>
+</html>
