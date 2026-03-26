@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Communicate Smart Hub</title>
+<style>
+
+body {
+font-family: Arial;
+margin: 0;
+background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1);
+color: #333;
+}
+
+.container {
+padding: 20px;
+}
+
+h1 {
+text-align: center;
+color: white;
+}
+
+.card {
+background: white;
+padding: 15px;
+margin: 15px 0;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+color: #6a11cb;
+}
+
+button {
+padding: 10px;
+border: none;
+border-radius: 10px;
+background: #ff6f61;
+color: white;
+font-weight: bold;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.hidden {
+display: none;
+}
+
+.diagram {
+background: #f0f8ff;
+padding: 10px;
+border-radius: 10px;
+margin-top: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌍 Communicate Smart Hub</h1>
+
+<div class="card">
+<h2>📘 What is Communication?</h2>
+<p>Communication is the process of sending and receiving messages between people.</p>
+<div class="diagram">
+👤 Sender → 💬 Message → 👂 Receiver → 🔁 Feedback
+</div>
+</div>
+
+<div class="card">
+<h2>🗣 Types of Communication</h2>
+<p>🗨 Verbal – speaking</p>
+<p>🤐 Non-verbal – body language</p>
+<p>✍ Written – messages and emails</p>
+</div>
+
+<div class="card">
+<h2>🎭 Formal vs Informal</h2>
+<p><b>Formal:</b> “Good afternoon, I would like to present my idea.”</p>
+<p><b>Informal:</b> “Hey, let me show you something!”</p>
+</div>
+
+<div class="card">
+<h2>💛 Non-Violent Communication</h2>
+<p>Speak calmly, avoid harsh words, and respect others’ feelings.</p>
+<p>Instead of: “You are wrong!”</p>
+<p>Say: “I see it differently, let me explain.”</p>
+</div>
+
+<div class="card">
+<h2>🧠 Understand People</h2>
+<p>Listen carefully, observe body language, and be patient.</p>
+</div>
+
+<div class="card">
+<h2>✨ Speak Clearly & Confidently</h2>
+<button onclick="showTips()">Show Tips</button>
+<div id="tips" class="hidden">
+<p>✔ Speak slowly</p>
+<p>✔ Maintain eye contact</p>
+<p>✔ Practice before speaking</p>
+<p>✔ Believe in yourself</p>
+</div>
+</div>
+
+<div class="card">
+<h2>⚠ Do’s and Don’ts</h2>
+<button onclick="showDos()">Show Guide</button>
+<div id="dos" class="hidden">
+<p>✔ Be respectful</p>
+<p>✔ Listen actively</p>
+<p>✔ Be clear</p>
+<p>✘ Don’t interrupt</p>
+<p>✘ Don’t be rude</p>
+</div>
+</div>
+
+<div class="card">
+<h2>🌟 Why Communication Matters</h2>
+<p>Good communication builds relationships, prevents conflict, and helps you succeed in life.</p>
+</div>
+
+</div>
+
+<script>
+function showTips(){
+document.getElementById("tips").classList.toggle("hidden");
+}
+
+function showDos(){
+document.getElementById("dos").classList.toggle("hidden");
+}
+</script>
+
+</body>
+     </html>
